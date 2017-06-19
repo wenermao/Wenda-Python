@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+{% extends "base.html" %}
+
+{% block title %}Wenda - 确认你的账户{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>
+        Hello, {{ current_user.username }}!
+    </h1>
+    <h3>你还没有激活你的账户</h3>
+    <p>
+        在你能够正常使用网站功能之前，你需要激活你的账户邮箱。
+    </p>
+    <p>
+        检查你的邮箱，是否接收到了我们发送的确认邮件
+
+    </p>
+    <p>
+        需要发送另一份邮件？
+        <a href="{{ url_for('auth.resend_confirmation', token=token,_external=True) }}">点击这里</a>
+    </p>
+</div>
+{% endblock %}

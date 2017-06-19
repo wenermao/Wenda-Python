@@ -1,0 +1,13 @@
+Dear {{ user.username }},
+
+欢迎加入问答Wenda!
+
+请点击下面链接验证登录邮箱:
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+谢谢,
+
+Wenda团队敬上
+
+Note: 请不要回复本邮件.

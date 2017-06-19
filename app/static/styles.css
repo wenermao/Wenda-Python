@@ -1,0 +1,133 @@
+/*bootstrap:page-header页面标题
+label label-。。。标签
+pagination那些
+btn那些
+等
+*/
+a{
+    text-decoration:none
+}
+a:hover{
+    text-decoration:none;
+}
+.navbar-inverse{
+    background: #39607d !important;
+}
+.questions{
+    margin-bottom: 70px;
+    list-style-type: none;
+    text-indent: 16px;
+    padding: 0px 86px;
+
+}
+.question{
+    border-bottom: 1px solid #e3e3e3;
+    padding: 8px;
+}
+.questoin-form{
+    padding: 0px 86px;
+}
+/*.questionall{*/
+/*width: 100%;*/
+/*padding: 10px;*/
+/*margin-top: 20px;*/
+/*}*/
+.picw{
+    float: left;
+    margin-left: 10px;
+    /*height: auto;*/
+}
+.question-content{
+    min-height: 58px;
+}
+.question-date{
+    float: right;
+}
+
+.question-author{
+    font-weight: bold;
+}
+/*.question-body{*/
+
+/*margin-left: 0px;*/
+/*}*/
+.question-footer{
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+/*div.flask-pagedown-preview {*/
+/*margin: 10px 0px 10px 0px;*/
+/*border: 1px solid #e0e0e0;*/
+/*padding: 4px;*/
+/*min-height: 50px;*/
+/*}*/
+/*div#flask-pagedown-body-preview {*/
+/*margin: 10px 0px 10px 0px;*/
+/*border: 1px solid #e0e0e0;*/
+/*padding: 4px;*/
+/*min-height: 50px;*/
+/*}*/
+div.flask-pagedown-preview h1 {
+    font-size: 140%;
+}
+div.flask-pagedown-preview h2 {
+    font-size: 130%;
+}
+div.flask-pagedown-preview h3 {
+    font-size: 120%;
+}
+
+.answers{
+    margin-bottom: 70px;
+    list-style-type: none;
+    /*text-indent: 16px;*/
+    padding: 0px 86px;
+}
+.answer{
+    border-bottom: 1px solid #e3e3e3;
+    padding: 8px;
+}
+
+.picd{
+    float: left;
+    margin-left: 10px;
+    /*height: auto;*/
+}
+.answer-content{
+    margin-left: 80px;
+    min-height: 58px;
+}
+.answer-date{
+    float: right;
+}
+.answer-author{
+    font-weight: bold;
+}
+.answer-body{
+    margin-left: 0px;
+}
+.answer-footer{
+    text-align: right;
+    margin-bottom: 0px;
+}
+.answer-form {
+    margin: 16px 0px 16px 32px;
+    padding: 0px 86px;
+}
+.search-form{
+    margin: 16px 0px 16px 32px;
+}
+
+.pagination_box{
+    width:100%;
+}
+ul.pagination{
+    float: right;
+    margin-right: 86px;
+}
+
+.navbar {
+    margin-bottom: 90px !important;
+}
+

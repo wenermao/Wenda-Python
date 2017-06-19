@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+<link rel="stylesheet" href="../static/styles.css" type="text/css" />
+{% block title %}Wenda - 修改问题{% endblock %}
+
+
+{% block page_content %}
+
+    <div class="page-header">
+        <h1>修改问题描述</h1>
+        <div>
+            {{ wtf.quick_form(form) }}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {{ pagedown.include_pagedown() }}
+{% endblock %}

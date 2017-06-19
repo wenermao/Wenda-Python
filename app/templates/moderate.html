@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Wenda - 编辑回答{% endblock %}
+
+
+{% block page_content %}
+    <div class="page-header">
+        <h1>编辑回答</h1>
+    </div>
+    {% set moderate = True %}
+    {% include '_answersforq.html' %}
+    {% if pagination %}
+        <div class="pagination_box">
+            {{ macros.pagination_widget(pagination, '.moderate') }}
+        </div>
+    {% endif %}
+{% endblock %}

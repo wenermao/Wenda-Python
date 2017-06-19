@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+{#<style>#}
+{#    .pagination_box{#}
+{#        width:100%;#}
+{#    }#}
+{#    ul.pagination{#}
+{#        float: right;#}
+{#        margin-right: 86px;#}
+{#    }#}
+{##}
+{#    .navbar {#}
+{#    margin-bottom: 90px !important;#}
+{#    }#}
+{#    .answers,.answer-form{#}
+{#        padding: 0px 86px;#}
+{#    }#}
+{#    #answers{#}
+{#        text-indent: 86px;#}
+{#    }#}
+{#</style>#}
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Wenda - 问题详情{% endblock %}
+
+
+{% block page_content %}
+
+    {% include '_questions.html' %}
+    <h4 id="answers">回答</h4>
+    {% include '_answersforq.html' %}
+
+    {% if current_user.can(Permission.ANSWER) %}
+        <div class="answer-form">
+            {{ wtf.quick_form(form) }}
+        </div>
+    {% endif %}
+    {% if pagination %}
+        <div class="pagination_box">
+            {{ macros.pagination_widget(pagination, '.question', fragment='#answers', id=questions[0].id) }}
+        </div>
+    {% endif %}
+
+{% endblock %}
